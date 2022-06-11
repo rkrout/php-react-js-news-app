@@ -1,0 +1,55 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.newsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .container{
+        padding: 10px;
+    }
+    
+    .newsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dropDownContainer {
+    position: relative;
+}
+
+.dropDownBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid var(--color-gray-300);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.dropDown {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.dropDownItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropDownItem:hover {
+    background-color: var(--color-indigo-600);
+    color: white;
+}

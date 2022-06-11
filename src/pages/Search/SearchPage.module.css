@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.newsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.searchForm {
+    width: 600px;
+    margin: auto;
+    background-color: #e5e7eb;
+    padding: 15px;
+    border-radius: 2px;
+    border: 2px solid #d1d5db;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #d1d5db;
+    border-radius: 2px;
+}
+
+.input {
+    flex: 1;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 10px;
+    }
+
+    .newsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .searchForm {
+        width: 100%;
+    }
+}
