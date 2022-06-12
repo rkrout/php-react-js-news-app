@@ -1,0 +1,39 @@
+.checkbox {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid var(--color-gray-300);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.checkbox>input {
+    display: none;
+}
+
+.checkbox>span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox>span::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color-gray-300);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.checkbox input:checked+span::before {
+    background-color: var(--color-indigo-600);
+    content: "\2713";
+    border-color: var(--color-indigo-600);
+}
